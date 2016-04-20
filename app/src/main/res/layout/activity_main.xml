@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jiesoon.jstabapp.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="推荐"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="热点"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="科技"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="社会"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="订阅"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_below="@id/toolbar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="捷训网"
+            android:textSize="36sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_background"
+            android:clickable="true"
+            android:drawableTop="@android:drawable/ic_menu_camera"
+            android:gravity="center"
+            android:text="Home"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/video"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_background"
+            android:clickable="true"
+            android:drawableTop="@android:drawable/ic_menu_agenda"
+            android:gravity="center"
+            android:text="Video"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/topic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_background"
+            android:clickable="true"
+            android:drawableTop="@android:drawable/ic_menu_compass"
+            android:gravity="center"
+            android:text="Topic"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_background"
+            android:clickable="true"
+            android:drawableTop="@android:drawable/ic_menu_edit"
+            android:gravity="center"
+            android:text="Profile"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</RelativeLayout>
